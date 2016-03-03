@@ -27,11 +27,11 @@
 //   $('.goals').empty();
 //  });
 // });
-//  $(document).ready(function () {
-//     setTimeout(function(){
-//         $('.panel-body').fadeIn(2500);
-//     }, 500);
-// });
+  //  $(document).ready(function () {
+  //    setTimeout(function(){
+  //        $(url).fadeIn(1500);
+  //    }, 500);
+  //   });
 $(document).ready(function(){
   $('#unfollow_btn').hover(function(){
     $(this).removeClass('btn-primary');
@@ -41,5 +41,8 @@ $(document).ready(function(){
     $(this).html('Following');
     $(this).removeClass('btn-danger');
     $(this).addClass('btn-primary');
-  });
-});
+  }),
+  setTimeout(function(){
+      $(".hero").fadeIn(2000);
+  }, 1000);
+ });
