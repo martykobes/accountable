@@ -10,7 +10,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
+gem 'aws-sdk-v1'
+gem 'aws-s3'
 gem 'paperclip'
+
 gem 'omniauth-twitter'
 gem 'simple_calendar', '~> 2.0'
 gem 'will_paginate', '~> 3.0.6'
@@ -20,15 +23,15 @@ group :development, :test do
   gem 'byebug'
 end
 
-#for our local server:
+# for our local server:
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'sqlite3'
 end
 
-#for Heroku:
+# for Heroku:
 group :production do
-	gem 'pg'
-	gem 'rails_12factor'
+  gem 'pg'
+  gem 'rails_12factor'
 end
